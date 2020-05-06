@@ -41,7 +41,37 @@ namespace cscondition
             }
             else
             {
-                    Console.WriteLine("저녁 먹을 시간입니다.");                }
+                    Console.WriteLine("저녁 먹을 시간입니다.");               
+            }
+
+            Console.WriteLine("이번 달은 몇 월인가요:");
+            int input2 = int.Parse(Console.ReadLine());
+            switch(input)
+            {
+                case 12:
+                case 1:
+                case 2:
+                    Console.WriteLine("겨울입니다");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    Console.WriteLine("봄입니다");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    Console.WriteLine("여름입니다");
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    Console.WriteLine("가을입니다");
+                    break;
+                default:
+                    Console.WriteLine("지구가 아닙니다");
+                    break;
+
             }
         }
     }
