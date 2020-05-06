@@ -88,6 +88,38 @@ namespace cscondition
             {
                 Console.WriteLine("인사 안할래요..?");
             }
+
+            ConsoleKeyInfo info = Console.ReadKey();
+            switch (info.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.DownArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.LeftArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.RightArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                default:
+                    switch (info.KeyChar)
+                    {
+                        case (char)38:
+                            Console.WriteLine("위로 이동");
+                            break;
+                        case '가':
+                            Console.WriteLine("가 입력");
+                            break;
+                        default:
+                            Console.WriteLine("다른 키를 눌렀습니다");
+                            break;
+                    }
+                    break;
+            }
+
         }
     }
 }
